@@ -1,0 +1,77 @@
+body{
+    background-color: #E6E6FA;
+    font-family: Montserrat;
+}
+h2{
+    font-size: small;
+    color: #8B008B;
+}
+h1{
+    font-size: x-large;
+    margin-block-start: 0em;
+    color: #8B008B;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input_area{
+    font-size: small;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text_area{
+    font-size: small;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+input{
+    height: 1.5em;
+    width: 8em;
+}
+.container{
+    background-color: #E0FFFF;
+    display: inline-flex;
+    padding: 2em;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+    width: 40em;
+    height: 50em;
+}
+.calculate{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.area{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: large;
+    height: 3em;
+    width: 50%;
+    background-color: #E6E6FA;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.graph-area {
+    margin-top: 20px; 
+}

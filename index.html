@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class="area">
+            <div class="container">
+                <h1>Calculadora de Circuitos</h1>
+                <div class="input_area">
+                    <h2>Insira o valor da tensão da base - Vbb(V):</h2>
+                    <input id="Vbb" type="number">
+                </div>
+                <div class="input_area">
+                    <h2>Insira o valor da resistência da base - Rbb(&Omega;):</h2>
+                    <input id="Rb" type="number">
+                </div>
+                <div class="input_area">
+                    <h2>Insira o valor da tensão do coletor - Vcc(V):</h2>
+                    <input id="Vcc" type="number">
+                </div>
+                <div class="input_area">
+                    <h2>Insira o valor da resistência do coletor - Rcc(&Omega;):</h2>
+                    <input id="Rc" type="number">
+                </div>
+                <div class="input_area">
+                    <h2>Insira o valor do ganho(&beta;):</h2>
+                    <input id="Ganho" type="number">
+                </div>
+                <div class="options">
+                    <select id="aprox" style="margin-right: 25%;">
+                        <option value="primeira">Ideal</option>
+                        <option value="segunda">2ª aproximação</option>
+                        <option value="terceira">3ª aproximação</option>
+                    </select>
+                    <button onclick="calculate()" style="width: 10em;">CALCULAR</button>
+                    <button onclick="plotGraph()" style="width: 10em; margin-left: 10px;">GRÁFICO</button> 
+                </div>
+                <div class="calculate">
+                    <div class="text_area">
+                        <h2>Ib - Corrente da Base (µA):</h2>
+                        <textarea name="" id="text_area_Ib" style="width: 8em; height: 1.5em"></textarea>
+                    </div>
+                    <div class="text_area">
+                        <h2>Ic - Corrente do Coletor (mA):</h2>
+                        <textarea name="" id="text_area_Ic" style="width: 8em; height: 1.5em"></textarea>
+                    </div>
+                    <div class="text_area">
+                        <h2>Ie - Corrente do Emissor (mA):</h2>
+                        <textarea name="" id="text_area_Ie" style="width: 8em; height: 1.5em"></textarea>
+                    </div>
+                    <div class="text_area">
+                        <h2>Vce - Tensão Coletor-Emissor (V):</h2>
+                        <textarea name="" id="text_area_Vce" style="width: 8em; height: 1.5em"></textarea>
+                    </div>
+                    <div class="text_area">
+                        <h2>P - Potência dissipada (W):</h2>
+                        <textarea name="" id="text_area_Pd" style="width: 8em; height: 1.5em"></textarea>
+                    </div>
+                </div>
+                <div class="graph-area">
+                    <canvas id="grafico" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
